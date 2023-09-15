@@ -43,12 +43,12 @@
   <div class="row form-group mb-4">
     <div class="col">
       <label for="tel">Telefone</label>
-      <input type="text" class="form-control" id="tel" name="tel" value="<%= customer.tel %>" placeholder="Telephone" required>
+      <input type="number" class="form-control" id="tel" name="tel" value="<%= customer.tel %>" placeholder="Telephone" required>
     </div>
 
     <div class="col">
       <label for="email">Email</label>
-      <input type="text" class="form-control" id="email" name="email" value="<%= customer.email %>" placeholder="Email" required>
+      <input type="email" class="form-control" id="email" name="email" value="<%= customer.email %>" placeholder="Email" required>
     </div>
   </div>
 
@@ -82,9 +82,9 @@
         </p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
         <form action="/edit/<%= customer._id %>?_method=DELETE" method="POST" class="position-relative">
-          <button type="submit" class="btn btn-primary">Yes, Remove Customer</button>
+          <button type="submit" class="btn btn-primary">Sim, remover clientes</button>
         </form>
       </div>
     </div>
